@@ -60,11 +60,10 @@ try {
 			.'Teléfono: '.$phone."\n"
 			."Mensaje\n". $message;
 
-	$mail->Subject = 'Mensaje enviado desde la web agenciadangi.com';
+	$mail->Subject = 'Synergy :: Página contacto';
 	$mail->Body    = $body;
     $mail->AltBody = $text_body;
-    $mail->addAddress('dbecerra@agenciadangi.com', 'Dante Raul');
-    $mail->AddCC('larriega@gmail.com', 'Oscar Larriega');
+    $mail->addAddress('eventos@nosilenceperu.com', 'Synergy Eventos');
 
     if ($mail->send())
 	{
