@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Harvest Hills</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="http://demo.astemplates.com/html-templates/001022/favicon.png">
+
+    <!-- Bootstrap css -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+    <!-- Vegas - Fullscreen Backgrounds -->
+    <link href="assets/css/jquery.vegas.min.css" rel="stylesheet">
+    <!-- OWL carousel css -->
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <!-- Intro animations -->
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <!-- Font awesome -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox.css" rel="stylesheet">
+
+    <!-- styles for this template -->
+    <link href="assets/css/theme.styles.css" rel="stylesheet">
+
+    <!-- place your extra custom styles in this file -->
+    <!-- <link href="assets/css/theme.custom.css" rel="stylesheet"> -->
+    <link href="assets/css/mobile.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<!-- data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined,
+	 and when background change is disabled for mobile -->
+<!-- data-overlay: "true" - semi-transparent black overlay on top of bg enabled, "false" - disabled -->
+<!-- data-overlay-opacity: set the opacity/transparency of the black overlay -->
+<body data-default-background-img="assets/images/backgrounds/bg-1.jpg" data-overlay="true" data-overlay-opacity="0.35">
+
+    <!-- Outer Container ***************************************************************************************  -->
+    <div id="outer-container">
+
+        <!-- Left Sidebar **************************************************************************************  -->
+        <section id="left-sidebar">
+
+            <!--  Logo  -->
+            <!--  change the img src to your logo  -->
+            <div class="logo">
+                <a href="#intro" class="link-scroll">
+                    SYNERGY<br>EVENTOS
+                </a>
+            </div>
+            <!--  END: Logo  -->
+
+            <!-- Main Menu  -->
+
+            <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
+                 - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
+                 - set href of each <a> to the id of the .section-w rapper to link to -->
+            <!-- Menu Icon for smaller viewports -->
+
+            <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();">
+                <span class="glyphicon glyphicon-th"></span>
+            </div>
+
+            <ul id="main-menu">
+                <li id="menu-item-text" class="menu-item scroll"><a href="#text">nosotros</a></li>
+                <li id="menu-item-carousel" class="menu-item scroll"><a href="#carousel">servicios</a></li>
+                <!-- <li id="menu-item-featured" class="menu-item scroll"><a href="#grid">testimonios</a></li> -->
+                <li id="menu-item-contact" class="menu-item scroll"><a href="#contact">contacto</a></li>
+                <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
+                <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
+            </ul>
+            <!--END:  Main Menu  -->
+
+        </section>
+
+        <!-- END: Left Sidebar *********************************************************************************  -->
+
+        <!-- Main Content **************************************************************************************  -->
+        <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
+               - to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
+        <section id="main-content" class="clearfix">
+
+            <!-- SECTION: Intro Text -->
+            <!-- This section should contain heading and intro paragraph. It can also include links to other sections -->
+            <!-- For each section <article class="section-wrapper".. :
+                 - remember to use a unique id,
+                 - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+
+            <article id="intro" class="section-wrapper clearfix" data-custom-background-img="http://demo.astemplates.com/html-templates/001022/assets/images/backgrounds/bg-1.jpg">
+                <div class="content-wrapper clearfix wow fadeInDown" data-wow-delay="0.3s">
+                    <div class="col-sm-10 col-md-9 pull-right">
+
+                        <section class="feature-text">
+                            <h1 class="section-title">SYNERGY</h1>
+                            <p>“Synergy se posiciono en el 2014 como una agencia creativa en las celebraciones corporativas”</p>
+
+                            <!-- to add scrolling effects to links linking to same page section, add .link-scroll class -->
+                            <!-- <p><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">find out more</a></p> -->
+                        </section>
+
+                    </div>
+                </div>
+            </article>
+            <!-- END SECTION: Intro Text     -->
+
+
+            <!-- SECTION: Content Text  -->
+            <!-- This section should contain generic content (text, image, etc) -->
+            <!-- For each section <article class="section-wrapper".. :
+                 - remember to use a unique id,
+                 - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+            <article id="text" class="section-wrapper clearfix" data-custom-background-img="http://demo.astemplates.com/html-templates/001022/assets/images/backgrounds/bg-2.jpg">
+                <div class="content-wrapper clearfix">
+                    <div class="col-sm-10 col-md-9 pull-right">
+
+                        <!-- Start: Section content to edit -->
+
+                        <h2 class="section-title">Nosotros</h2>
+                        <div class="clearfix"></div>
+
+                        <p class="feature-paragraph">
+                            “Synergy se posiciono en el 2014 como una agencia creativa en las celebraciones corporativas”. Hoy en día con sede en Lima y actuación a nivel nacional, otorgarnos a nuestros clientes maximizar el beneficio de su inversión compartiendo sus objetivos y metas organizacionales, creando valor de marca en marco creativo y con las últimas tendencias.
+                        </p>
+                        <!-- to make a popup/modal link add an onClick function call to the function:
+                             - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                        <!-- <p>
+                            <a href="#" onclick="populate_and_open_modal(event, 'modal-content-1');" class="btn btn-outline-inverse btn-sm">Leer mas</a>
+                        </p> -->
+
+                        <!-- content which will be shown in the popup/modal when clicking on the above link
+                             - it is important to set a unique id -->
+                        <!-- <div class="content-to-populate-in-modal" id="modal-content-1">
+                            <h3>CELEBRACIONES CORPORATIVAS</h3>
+                            <p>
+                                Innovación y creatividad para celebraciones corporativas.<br>Unión entre espacio, gastronomía, decoración y espectáculos para crear un resultado impactante en el invitado.
+                            </p>
+                            <p>Unido a una eficiencia operacional y logística creamos eventos diferentes, atractivos y sostenibles.</p>
+
+                            <h3>CONVENCIONES</h3>
+                            <p>
+                                Mensaje, puesta en escena, desarrollo e imagen de marca son los 4 pilares fundamentales para que una convención quede en la memoria de los asistentes.</p>
+                            <p>Ofrecemos soluciones profesionales para convenciones que deseen proyectar un valor añadido en sus stands o exposiciones
+                            </p>
+                        </div> -->
+
+                        <!-- End: Section content to edit -->
+
+                    </div>
+                </div>
+            </article>
+            <!-- END SECTION: Content Text  -->
+
+
+            <!-- SECTION: Carousel  -->
+            <!-- This section should contain slides with an icon, text, and an optional button -->
+            <!-- For each section <article class="section-wrapper".. :
+                 - remember to use a unique id,
+                 - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+            <article id="carousel" class="section-wrapper clearfix" data-custom-background-img="http://demo.astemplates.com/html-templates/001022/assets/images/backgrounds/bg-3.jpg">
+                <div class="content-wrapper clearfix">
+                    <div id="features-carousel" class="carousel slide with-title-indicators max-height" data-height-percent="70" data-ride="carousel">
+                        <ol class="carousel-indicators title-indicators">
+                            <li data-target="#features-carousel" data-slide-to="0" class="active">Celebraciones corporativas</li>
+                            <li data-target="#features-carousel" data-slide-to="1">Convenciones</li>
+                            <li data-target="#features-carousel" data-slide-to="2">Lanzamientos</li>
+                            <li data-target="#features-carousel" data-slide-to="3">Actividades de Integracion</li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+
+                            <!-- Carousel Slide 1  -->
+                            <div class="item active">
+                                <div class="carousel-text-content">
+                                    <!-- start: slide content to edit -->
+
+                                    <!-- <img src="http://demo.astemplates.com/html-templates/001022/assets/images/carousel/product-ico-1.png" class="icon" alt="Product 1"> -->
+                                    <!-- if you want to use bootstrap glyphicons instead, replace the above <img> with the commented <span> below -->
+                                    <!-- <span class="icon glyphicon glyphicon-record"></span> -->
+
+                                    <h2 class="title">CELEBRACIONES CORPORATIVAS</h2>
+                                    <p>
+                                        Innovación y creatividad para celebraciones corporativas.<br>
+                                    </p>
+                                    <p>Unión entre espacio, gastronomía, decoración y espectáculos para crear un resultado impactante en el invitado.<br>Unido a una eficiencia operacional y logística creamos eventos diferentes, atractivos y sostenibles.
+                                    </p>
+
+                                    <!-- to make a popup/modal link add an onClick function call to the function:
+                                    - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                                    <!-- <p><a href="#" onclick="populate_and_open_modal(event, 'modal-content-2');" class="btn btn-outline-inverse btn-sm">read more</a></p> -->
+
+                                    <!-- content which will be shown in the popup/modal when clicking on the above link
+                                    - it is important to set a unique id -->
+                                    <!-- <div class="content-to-populate-in-modal" id="modal-content-2">
+
+                                    </div> -->
+                                    <!-- end: slide content to edit -->
+                                </div>
+                            </div>
+                            <!-- END: Carousel Slide 1  -->
+
+                            <!-- Carousel Slide 2  -->
+                            <div class="item">
+                                <div class="carousel-text-content">
+                                    <!-- start: slide content to edit -->
+                                    <h2>CONVENCIONES</h2>
+                                    <p>
+                                        <!-- <img data-img-src="assets/images/carousel/product-1.png" class="lazy rounded_border hover_effect pull-right" alt="Product 1"> -->
+                                        Mensaje, puesta en escena, desarrollo e imagen de marca son los 4 pilares fundamentales para que una convención quede en la memoria de los asistentes.
+                                    </p>
+                                    <p>
+                                        Ofrecemos soluciones profesionales para convenciones que deseen proyectar un valor añadido en sus stands o exposiciones.
+                                    </p>
+
+                                    <!-- to make a popup/modal link add an onClick function call to the function:
+                                    - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                                    <!-- <p><a href="#" onclick="populate_and_open_modal(event, 'modal-content-3');" class="btn btn-outline-inverse btn-sm">read more</a></p> -->
+
+                                    <!-- content which will be shown in the popup/modal when clicking on the above link
+                                    - it is important to set a unique id -->
+                                    <div class="content-to-populate-in-modal" id="modal-content-3">
+                                        <h2>ACTIVIDADES DE INTEGRACION</h2>
+                                        <!-- <p>
+                                            <img data-img-src="assets/images/carousel/product-2.png" class="lazy rounded_border hover_effect pull-right" alt="Product 2">
+                                            Morbi porttitor pharetra libero et semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu
+                                            ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                        </p> -->
+                                        <!-- <p>
+                                            Praesent vestibulum nec sapien ac elementum. Etiam scelerisque elementum fringilla.
+                                        </p>
+                                        <p>
+                                            Mauris ac pulvinar diam, scelerisque dapibus enim. Nam mi purus, elementum interdum turpis id, aliquam mattis mi.
+                                            Praesent vestibulum nec sapien ac elementum. Etiam scelerisque elementum fringilla.
+                                        </p> -->
+                                    </div>
+
+                                    <!-- end: slide content to edit -->
+                                </div>
+                            </div>
+                            <!-- END: Carousel Slide 2  -->
+
+                            <!-- Carousel Slide 3  -->
+                            <div class="item">
+                                <div class="carousel-text-content">
+                                    <!-- start: slide content to edit -->
+
+                                    <!-- <img src="http://demo.astemplates.com/html-templates/001022/assets/images/carousel/product-ico-3.png" class="icon" alt="Product 3"> -->
+                                    <!-- if you want to use bootstrap glyphicons instead, replace the above <img> with the commented <span> below -->
+                                    <!-- <span class="icon glyphicon glyphicon-lock"></span> -->
+
+                                    <h2 class="title">LANZAMIENTOS</h2>
+                                    <p>
+                                        La celebración del lanzamiento de un producto, es un evento corporativo donde el objetivo es que el producto que se presenta y lance, perdure en el consciente de los asistentes, a través de todos los sentidos, durante todo el evento y luego del mismo.
+                                    </p>
+
+                                    <!-- to make a popup/modal link add an onClick function call to the function:
+                                    - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                                    <!-- <p><a href="#" onclick="populate_and_open_modal(event, 'modal-content-4');" class="btn btn-outline-inverse btn-sm">read more</a></p> -->
+
+                                    <!-- content which will be shown in the popup/modal when clicking on the above link
+                                    - it is important to set a unique id -->
+                                    <!-- <div class="content-to-populate-in-modal" id="modal-content-4">
+                                        <h2>Urabitur in velit</h2>
+                                        <p>
+                                            <img data-img-src="assets/images/carousel/product-3.png" class="lazy rounded_border hover_effect pull-right" alt="Product 3">
+                                            Morbi porttitor pharetra libero et semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu
+                                            ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                        </p>
+                                        <p>
+                                            Praesent vestibulum nec sapien ac elementum. Etiam scelerisque elementum fringilla.
+                                        </p>
+                                        <p>
+                                            Mauris ac pulvinar diam, scelerisque dapibus enim. Nam mi purus, elementum interdum turpis id, aliquam mattis mi.
+                                            Praesent vestibulum nec sapien ac elementum. Etiam scelerisque elementum fringilla.
+                                        </p>
+                                    </div> -->
+                                    <!-- end: slide content to edit -->
+                                </div>
+                            </div>
+                            <!-- END: Carousel Slide 3  -->
+
+                            <!-- Carousel Slide 4  -->
+                            <div class="item">
+                                <div class="carousel-text-content">
+                                    <!-- start: slide content to edit -->
+
+                                    <!-- <img src="http://demo.astemplates.com/html-templates/001022/assets/images/carousel/product-ico-4.png" class="icon" alt="Product 4"> -->
+                                    <!-- if you want to use bootstrap glyphicons instead, replace the above <img> with the commented <span> below -->
+                                    <!-- <span class="icon glyphicon glyphicon-lock"></span> -->
+
+                                    <h2 class="title">ACTIVIDADES DE INTEGRACION</h2>
+                                    <!-- <p>
+                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu.
+                                        Proin sodales auctor ligula eget hendrerit fermentum fermentum. Morbi porttitor pharetra libero et semper elementum interdum.
+                                    </p> -->
+
+                                    <!-- to make a popup/modal link add an onClick function call to the function:
+                                    - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                                    <!-- <p><a href="#" onclick="populate_and_open_modal(event, 'modal-content-5');" class="btn btn-outline-inverse btn-sm">read more</a></p> -->
+
+                                    <!-- content which will be shown in the popup/modal when clicking on the above link
+                                    - it is important to set a unique id -->
+                                    <!-- <div class="content-to-populate-in-modal" id="modal-content-5">
+                                        <h2>Class aptent</h2>
+                                        <p>
+                                            <img data-img-src="assets/images/carousel/product-4.png" class="lazy rounded_border hover_effect pull-left" alt="Product 4">
+                                            Morbi porttitor pharetra libero et semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu
+                                            ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                        </p>
+                                        <p>
+                                            Praesent vestibulum nec sapien ac elementum. Etiam scelerisque elementum fringilla.
+                                        </p>
+                                        <p>
+                                            Mauris ac pulvinar diam, scelerisque dapibus enim. Nam mi purus, elementum interdum turpis id, aliquam mattis mi.
+                                            Praesent vestibulum nec sapien ac elementum. Etiam scelerisque elementum fringilla.
+                                        </p>
+                                    </div> -->
+                                    <!-- end: slide content to edit -->
+                                </div>
+                            </div>
+                            <!-- END: Carousel Slide 4  -->
+
+                        </div>
+                        <!-- the left/right arrows to move from one slide to the other -->
+                        <a class="left carousel-control" href="#features-carousel" data-slide="prev"></a>
+                        <a class="right carousel-control" href="#features-carousel" data-slide="next"></a>
+                    </div>
+                </div>
+            </article>
+            <!-- END SECTION: Carousel  -->
+            <!--<article id="grid" class="section-wrapper clearfix" data-custom-background-img="http://demo.astemplates.com/html-templates/001022/assets/images/backgrounds/bg-4.jpg">
+                <div class="content-wrapper clearfix">
+                    <div class="col-sm-11 col-md-10 pull-right">
+                        <h2 class="section-title">Testimonios</h2>
+                        <div class="clearfix"></div>
+
+                    </div>
+                </div>
+            </article>-->
+
+            <!-- SECTION: Featured Items  -->
+            <!-- This section may contain a max of 3 items each consisting of an image and text. Each item may be linked -->
+            <!-- For each section <article class="section-wrapper".. :
+                 - remember to use a unique id,
+                 - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+
+            <!-- END SECTION: Featured Items  -->
+
+
+            <!-- SECTION: Tab Our News  -->
+            <!-- This section should contain generic content in tabs -->
+            <!-- More information about Bootstrap Tabs can be found on http://getbootstrap.com/javascript/#tabs -->
+            <!-- For each section <article class="section-wrapper".. :
+                 - remember to use a unique id,
+                 - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+            <!-- TABS -->
+            <!-- END SECTION: Tab News  -->
+
+
+            <!-- SECTION: Contact Us  -->
+            <!-- This section should contain contact details and a contact form -->
+            <!-- For each section <article class="section-wrapper".. :
+                 - remember to use a unique id,
+                 - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+            <article id="contact" class="section-wrapper clearfix" data-custom-background-img="http://demo.astemplates.com/html-templates/001022/assets/images/backgrounds/bg-7.jpg">
+                <div class="content-wrapper clearfix">
+                    <div class="col-sm-12 pull-right">
+
+                        <!-- Start: Section content to edit -->
+
+                        <h2 class="section-title">Contáctenos</h2>
+
+                        <!-- Contact Details -->
+                        <div class="contact-details col-sm-5 col-md-3">
+                            <p>
+                                Av 2 de mayo<br/>
+                                516 of 201,<br/>
+                                Miraflores
+                            </p>
+                            <p>Tel: 708-4101<br>Cel: 992346162</p>
+                            <p>eventos@nosilenceperu.com</p>
+                        </div>
+                        <!-- END: Contact Details -->
+
+                        <!-- Contact Form -->
+                        <div class="col-sm-7 col-md-9">
+                            <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
+                            <form class="form-style validate-form clearfix" action="http://demo.astemplates.com/html-templates/001022/assets/php/mail.php" method="POST" role="form">
+
+                                <!-- Left Column -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="text-field form-control validate-field required" data-validation-type="string"
+                                        id="form-name" placeholder="Nombre completo" name="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="text-field form-control validate-field required" data-validation-type="email"
+                                        id="form-email" placeholder="Correo" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="text-field form-control validate-field phone" data-validation-type="phone"
+                                        id="form-contact-number" placeholder="Teléfono" name="contact_number">
+                                    </div>
+                                </div>
+                                <!-- END: Left Column -->
+
+                                <!-- Right Column -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea placeholder="Escriba su mensaje..." class="form-control validate-field required" name="message"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <img src="http://demo.astemplates.com/html-templates/001022/assets/images/loader.form.gif" class="form-loader">
+                                        <button type="submit" class="btn btn-sm btn-outline-inverse">Enviar</button>
+                                    </div>
+                                    <div class="form-group form-general-error-container"></div>
+                                </div>
+                                <!-- END: Right Column -->
+
+                            </form>
+                        </div>
+                        <!-- END: Contact Form -->
+
+                        <!-- End: Section content to edit -->
+                    </div>
+                </div>
+            </article>
+            <!-- END SECTION: Contact Us  -->
+
+        </section>
+        <section id="footer">
+
+            <!-- Go to Top -->
+            <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+            <!-- Social Icons -->
+            <!-- Each social icon item consists of the following:
+            - Link to the social page in href of <a>
+            - social icon in the <img> - a list of social icons options are found in the directory assets/images/social/ -->
+            <ul class="social-icons">
+                <li><a href="#" target="_blank" title="Facebook"><img src="http://demo.astemplates.com/html-templates/001022/assets/images/social/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#" target="_blank" title="Twitter"><img src="http://demo.astemplates.com/html-templates/001022/assets/images/social/twitter.png" alt="Twitter"></a></li>
+                <li><a href="#" target="_blank" title="Google+"><img src="http://demo.astemplates.com/html-templates/001022/assets/images/social/googleplus.png" alt="Google+"></a></li>
+            </ul>
+
+            <!-- copyright text -->
+            <div class="footer-text-line">&copy; 2016 SYNERGY EVENTOS</div>
+
+        </section>
+        <!-- END: Footer *************************************************************************************************  -->
+
+    </div>
+    <!-- Outer Container *************************************************************************************************  -->
+
+    <!-- Modal Window  -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-body clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery and Bootstrap JS -->
+    <script src="http://demo.astemplates.com/html-templates/001022/assets/js/jquery-1.11.2.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://demo.astemplates.com/html-templates/001022/assets/js/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="http://demo.astemplates.com/html-templates/001022/assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Easing - for transitions and effects -->
+    <script src="http://demo.astemplates.com/html-templates/001022/assets/js/jquery.easing.1.3.js"></script>
+
+    <!-- background image strech script -->
+    <script src="http://demo.astemplates.com/html-templates/001022/assets/js/vegas/jquery.vegas.min.js"></script>
+
+    <!-- detect mobile browsers -->
+    <script src="http://demo.astemplates.com/html-templates/001022/assets/js/detectmobilebrowser.js"></script>
+
+    <!-- detect scrolling -->
+    <script src="http://demo.astemplates.com/html-templates/001022/assets/js/jquery.scrollstop.min.js"></script>
+
+    <!-- owl carousel js -->
+    <script src="http://demo.astemplates.com/html-templates/001022/assets/js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- lightbox js -->
+    <script src="http://demo.astemplates.com/html-templates/001022/assets/js/lightbox/js/lightbox.min.js"></script>
+
+    <!-- intro animations -->
+    <script src="http://demo.astemplates.com/html-templates/001022/assets/js/wow/wow.min.js"></script>
+
+    <!-- responsive videos -->
+    <script src="http://demo.astemplates.com/html-templates/001022/assets/js/jquery.fitvids.js"></script>
+
+    <!-- Custom functions for this theme -->
+    <script src="http://demo.astemplates.com/html-templates/001022/assets/js/functions.js"></script>
+    <script src="http://demo.astemplates.com/html-templates/001022/assets/js/initialise-functions.js"></script>
+
+    <!-- IE9 form fields placeholder fix -->
+    <!--[if lt IE 9]>
+    <script>contact_form_IE9_placeholder_fix();</script>
+    <![endif]-->
+    <script>
+    /*
+	var isInIFrame = (window.location != window.parent.location);
+
+	if(isInIFrame == false)
+	{
+		<!-- Google Analytics -->
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-17774394-1', 'auto');
+        ga('send', 'pageview');
+
+    	<!-- Alexa Certify Javascript -->
+        _atrk_opts = { atrk_acct:"tD2of1a0CM002x", domain:"astemplates.com",dynamic: true};
+        (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+	}
+	else
+	{
+		jQuery(document).ready(function()
+		{
+			jQuery(".mod-custom__mobile_version").hide();
+		});
+	}*/
+    </script>
+  </body>
+</html>
