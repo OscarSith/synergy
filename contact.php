@@ -1,5 +1,5 @@
 <?php
-if(!$_POST) exit;
+if (!$_POST) exit;
 
 require 'SendMail/PHPMailerAutoload.php';
 
@@ -15,23 +15,23 @@ $email    = $_POST['email'];
 $phone    = $_POST['phone'];
 $message = $_POST['message'];
 
-if(trim($name) == '') {
+if (trim($name) == '') {
 	echo 'imcomplete';
 	exit();
-} else if(trim($email) == '') {
+} else if (trim($email) == '') {
 	echo 'imcomplete';
 	exit();
-} else if(!isEmail($email)) {
-	echo 'imcomplete';
-	exit();
-}
-
-if(trim($message) == '') {
+} else if (!isEmail($email)) {
 	echo 'imcomplete';
 	exit();
 }
 
-if(get_magic_quotes_gpc()) {
+if (trim($message) == '') {
+	echo 'imcomplete';
+	exit();
+}
+
+if (get_magic_quotes_gpc()) {
 	$message = stripslashes($message);
 }
 
@@ -62,20 +62,20 @@ try {
 
 	$mail->Subject = 'Synergy :: Página contacto';
 	$mail->Body    = $body;
-    $mail->AltBody = $text_body;
-    $mail->addAddress('eventos@nosilenceperu.com', 'Synergy Eventos');
+	$mail->AltBody = $text_body;
+	$mail->addAddress('diego@synergyeventos.com', 'Synergy Eventos');
 
     if ($mail->send())
 	{
 		echo "success";
-    }
-    else
-    {
-    	echo "error";
-    }
+	}
+	else
+	{
+		echo "error";
+	}
 
-    // Clear all addresses and attachments for next loop
-    $mail->clearAddresses();
+	// Clear all addresses and attachments for next loop
+	$mail->clearAddresses();
 } catch (phpmailerException $e) {
 	echo "error";
 }
