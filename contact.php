@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (!$_POST) exit;
 
 require 'SendMail/PHPMailerAutoload.php';
@@ -10,72 +11,75 @@ function isEmail($email) {
 
 if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
-$name     = $_POST['name'];
+$name     = $_POST['nombre'];
 $email    = $_POST['email'];
-$phone    = $_POST['phone'];
-$message = $_POST['message'];
+$phone    = $_POST['telefono'];
+$colegio    = $_POST['colegio'];
+$tipo    = $_POST['tipo'];
+$message = $_POST['mensaje'];
 
 if (trim($name) == '') {
-	echo 'imcomplete';
-	exit();
+	$_SESSION['ERROR'] = "Escriba su nombre";
 } else if (trim($email) == '') {
-	echo 'imcomplete';
-	exit();
+	$_SESSION['ERROR'] = "Esriba su correo electrónico";
 } else if (!isEmail($email)) {
-	echo 'imcomplete';
-	exit();
-}
-
-if (trim($message) == '') {
-	echo 'imcomplete';
-	exit();
-}
-
-if (get_magic_quotes_gpc()) {
-	$message = stripslashes($message);
-}
-
-try {
-	$mail = new PHPMailer();
-
-	$mail->isSMTP();
-	$mail->SMTPAuth = true;
-	$mail->Host = 'smtp.zoho.com';
-	$mail->Username = 'root@synergyeventos.com';
-	$mail->Password = '';
-	$mail->SMTPSecure = 'tls';
-	$mail->CharSet = 'UTF-8';
-	$mail->Port = 587;
-
-	$mail->From     = 'root@synergyeventos.com';
-	$mail->FromName = 'Agencia Dangi';
-
-	$body = '<h2>De: '.$name.'</h2>'
-			.'<ul><li>Correo electrónico: '.$email.'</li>'
-			.'<li>Teléfono: '.$phone.'</li>'
-			.'<li>Mensaje<p>'. $message .'</p></li></ul>';
-
-	$text_body = 'De: '.$name."\n\n"
-			.'Correo electrónico: '.$email."\n"
-			.'Teléfono: '.$phone."\n"
-			."Mensaje\n". $message;
-
-	$mail->Subject = 'Synergy :: Página contacto';
-	$mail->Body    = $body;
-	$mail->AltBody = $text_body;
-	$mail->addAddress('diego@synergyeventos.com', 'Synergy Eventos');
-
-    if ($mail->send())
-	{
-		echo "success";
-	}
-	else
-	{
-		echo "error";
+	$_SESSION['ERROR'] = "Esriba un correo electrónico válido";
+} else if (trim($message) == '') {
+	$_SESSION['ERROR'] = "Esriba su mensaje";
+} else {
+	if (get_magic_quotes_gpc()) {
+		$message = stripslashes($message);
 	}
 
-	// Clear all addresses and attachments for next loop
-	$mail->clearAddresses();
-} catch (phpmailerException $e) {
-	echo "error";
+	try {
+		$mail = new PHPMailer();
+
+		$mail->isSMTP();
+		$mail->SMTPAuth = true;
+		$mail->Host = 'smtp.zoho.com';
+		$mail->Username = 'root@synergyeventos.com';
+		$mail->Password = '';
+		$mail->SMTPSecure = 'tls';
+		$mail->CharSet = 'UTF-8';
+		$mail->Port = 587;
+
+		$mail->From     = 'root@synergyeventos.com';
+		$mail->FromName = 'Agencia Dangi';
+
+		$body = '<h2>De: '.$name.'</h2>'
+				.'<ul><li>Correo electrónico: '.$email.'</li>'
+				.'<li>Teléfono: '.$phone.'</li>'
+				.'<li>Colegio: '.$colegio.'</li>'
+				.'<li>Tipo: '.$tipo.'</li>'
+				.'<li>Mensaje<p>'. $message .'</p></li></ul>';
+
+		$text_body = 'De: '.$name."\n\n"
+				.'Correo electrónico: '.$email."\n"
+				.'Teléfono: '.$phone."\n"
+				.'Colegio: '.$colegio."\n"
+				.'Tipo: '.$tipo."\n"
+				."Mensaje\n". $message;
+
+		$mail->Subject = 'Synergy :: Página contacto';
+		$mail->Body    = $body;
+		$mail->AltBody = $text_body;
+		$mail->addAddress('diego@synergyeventos.com', 'Synergy Eventos');
+
+	    if ($mail->send())
+		{
+			$_SESSION['SUCCESS'] = "Su mensaje ha sido enviado";
+		}
+		else
+		{
+			$_SESSION['ERROR'] = "Hubo un error al enviar su mensaje, intentelo de nuevo";
+		}
+
+		// Clear all addresses and attachments for next loop
+		$mail->clearAddresses();
+	} catch (phpmailerException $e) {
+		$_SESSION['ERROR'] = $e->getMessage();
+	}
 }
+
+
+header('location: contacto.php');
