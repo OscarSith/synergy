@@ -73,4 +73,4 @@ if (trim($name) == '') {
 	}
 }
 
-header('location: ' . strtolower($page) . '.php');
+header('location: ' . $_SERVER['HTTP_REFERER']);

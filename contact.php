@@ -44,14 +44,14 @@ if (trim($name) == '') {
 		$mail->Port = 587;
 
 		$mail->From     = 'root@synergyeventos.com';
-		$mail->FromName = 'Agencia Dangi';
+		$mail->FromName = 'Synergy Perú';
 
 		$body = '<h2>De: '.$name.'</h2>'
 				.'<ul><li>Correo electrónico: '.$email.'</li>'
 				.'<li>Teléfono: '.$phone.'</li>'
 				.'<li>Colegio: '.$colegio.'</li>'
 				.'<li>Tipo: '.$tipo.'</li>'
-				.'<li>Mensaje<p>'. $message .'</p></li></ul>';
+				.'<li>Mensaje<p>'. nl2br($message) .'</p></li></ul>';
 
 		$text_body = 'De: '.$name."\n\n"
 				.'Correo electrónico: '.$email."\n"
@@ -82,4 +82,4 @@ if (trim($name) == '') {
 }
 
 
-header('location: contacto.php');
+header('location: ' . $_SERVER['HTTP_REFERER']);

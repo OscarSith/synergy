@@ -142,8 +142,14 @@
 				<br>
 				<form role="form" class="contact-form" action="contact.php" id="contact-form" method="post">
 					<div class="form-group" id="content-messages">
-						<div id="success" class="alert alert-success hidden" role="alert"></div>
-						<div id="error" class="alert alert-danger hidden" role="alert"></div>
+						<?php if (isset($_SESSION['SUCCESS'])): ?>
+							<div id="success" class="alert alert-success" role="alert"><?= $_SESSION['SUCCESS'] ?></div>
+							<?php unset($_SESSION['SUCCESS']) ?>
+						<?php endif ?>
+						<?php if (isset($_SESSION['ERROR'])): ?>
+							<div id="error" class="alert alert-danger" role="alert"><?php echo $_SESSION['ERROR'] ?></div>
+							<?php unset($_SESSION['ERROR']) ?>
+						<?php endif ?>
 					</div>
 					<div class="form-group">
 						<div class="controls">
