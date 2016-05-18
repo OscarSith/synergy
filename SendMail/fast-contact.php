@@ -46,7 +46,7 @@ if (trim($name) == '') {
 
 		$body = '<h2>De: '.$name.'</h2>'
 				.'<ul><li>Correo electrónico: '.$email.'</li>'
-				.'<li>Mensaje<p>'. $message .'</p></li></ul>';
+				.'<li>Mensaje<p>'. nl2br($message) .'</p></li></ul>';
 
 		$text_body = 'De: '.$name."\n\n"
 				.'Correo electrónico: '.$email."\n"

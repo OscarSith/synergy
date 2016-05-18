@@ -23,7 +23,7 @@ $path = array_pop($path);
 		<header class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<a href="index.php" class="logo">
+					<a href="/" class="logo">
 						<img src="assets/images/logo-synergy.png" class="img-responsive">
 					</a>
 				</div>

@@ -105,7 +105,13 @@
 				jQuery('#map').CustomMap();
 			});
 		}
-
+		var $accordion = $('#accordion');
+		if ($accordion.length) {
+			$accordion.on('click', '.panel-title a', function(e) {
+				$('#service-image').children().addClass('hidden');
+				$('#' + $(this).data('img')).removeClass('hidden');
+			});
+		}
 	</script>
 </body>
 </html>
