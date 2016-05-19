@@ -63,7 +63,7 @@ if (trim($name) == '') {
 		$mail->Subject = 'Synergy :: Página contacto';
 		$mail->Body    = $body;
 		$mail->AltBody = $text_body;
-		$mail->addAddress('diego@synergyeventos.com', 'Synergy Eventos');
+		$mail->addAddress('info@synergyeventos.com', 'Synergy Eventos');
 
 	    if ($mail->send())
 		{
