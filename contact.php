@@ -14,7 +14,7 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 $name     = $_POST['nombre'];
 $email    = $_POST['email'];
 $phone    = $_POST['telefono'];
-$colegio    = $_POST['colegio'];
+$empresa    = $_POST['empresa'];
 $tipo    = $_POST['tipo'];
 $message = $_POST['mensaje'];
 
@@ -47,16 +47,16 @@ if (trim($name) == '') {
 		$mail->FromName = 'Synergy Perú';
 
 		$body = '<h2>De: '.$name.'</h2>'
-				.'<ul><li>Correo electrónico: '.$email.'</li>'
-				.'<li>Teléfono: '.$phone.'</li>'
-				.'<li>Colegio: '.$colegio.'</li>'
-				.'<li>Tipo: '.$tipo.'</li>'
-				.'<li>Mensaje<p>'. nl2br($message) .'</p></li></ul>';
+				.'<ul><li><strong>CORREO ELECTRÓNICO:</strong> '.$email.'</li>'
+				.'<li><strong>TELÉFONO:</strong> '.$phone.'</li>'
+				.'<li><strong>COLEGIO:</strong> '.$empresa.'</li>'
+				.'<li><strong>TIPO:</strong> '.$tipo.'</li>'
+				.'<li><strong>MENSAJE</strong><blockquote>'. nl2br($message) .'</blockquote></li></ul>';
 
 		$text_body = 'De: '.$name."\n\n"
 				.'Correo electrónico: '.$email."\n"
 				.'Teléfono: '.$phone."\n"
-				.'Colegio: '.$colegio."\n"
+				.'Colegio: '.$empresa."\n"
 				.'Tipo: '.$tipo."\n"
 				."Mensaje\n". $message;
 

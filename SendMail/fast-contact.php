@@ -45,8 +45,8 @@ if (trim($name) == '') {
 		$mail->FromName = 'Agencia Dangi';
 
 		$body = '<h2>De: '.$name.'</h2>'
-				.'<ul><li>Correo electrónico: '.$email.'</li>'
-				.'<li>Mensaje<p>'. nl2br($message) .'</p></li></ul>';
+				.'<ul><li><strong>Correo electrónico:</strong> '.$email.'</li>'
+				.'<li><strong>Mensaje</strong><blockquote>'. nl2br($message) .'</blockquote></li></ul>';
 
 		$text_body = 'De: '.$name."\n\n"
 				.'Correo electrónico: '.$email."\n"
@@ -65,7 +65,6 @@ if (trim($name) == '') {
 		{
 			$_SESSION['ERROR'] = "Hubo un error al enviar su mensaje, intentelo de nuevo";
 		}
-
 
 		$mail->clearAddresses();
 	} catch (phpmailerException $e) {

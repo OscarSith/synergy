@@ -9,7 +9,6 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8">
-				<h4 class="classic-title"><span>Contáctanos</span></h4>
 				<p>Escríbenos y resolveremos tus dudas.</p>
 				<br>
 				<form role="form" class="contact-form" action="contact.php" id="contact-form" method="post">
@@ -30,7 +29,7 @@
 					</div>
 					<div class="form-group">
 						<div class="controls">
-							<input type="text" class="requiredField form-control" placeholder="Colegio" name="colegio">
+							<input type="text" class="requiredField form-control" placeholder="Empresa" name="empresa">
 						</div>
 					</div>
 					<div class="form-group">
@@ -63,9 +62,9 @@
 				<p>Av. Manuel Olguin 335 of. 1205 - Surco</p>
 				<div class="hr1" style="margin-bottom:10px;"></div>
 				<ul class="icons-list list-unstyled">
-					<li><span><i class="fa fa-phone fa-lg fa-fw"></i> Central:</span> 708 4101</li>
-	                <li><span><i class="fa fa-mobile-phone fa-lg fa-fw"></i> RPC:</span> 992346162</li>
-	                <li><span><i class="fa fa-envelope-o fa-lg fa-fw"></i> Correo:</span> eventos@nosilenceperu.com</li>
+					<li><strong><i class="fa fa-phone fa-lg fa-fw"></i> Central:</strong> 708 4101</li>
+	                <li><strong><i class="fa fa-mobile-phone fa-lg fa-fw"></i> RPC:</strong> 992346162</li>
+	                <li><strong><i class="fa fa-envelope-o fa-lg fa-fw"></i> Correo:</strong> <a href="mailito:eventos@nosilenceperu.com">eventos@nosilenceperu.com</a></li>
 				</ul>
 				<div class="hr1" style="margin-bottom:15px;"></div>
 			</div>
